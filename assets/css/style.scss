@@ -1,0 +1,520 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+header
+{
+    background-color: #fff;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+    
+    .navbar-brand img
+    {
+        max-width: 150px;
+    }
+    
+    .nav-item
+    {
+        font-size: 15px;
+        padding: 0 30px 0 0;
+        text-align: center;
+        
+        .nav-link 
+        {
+            color: #666666 !important;
+        }
+    }
+    .navbar-toggler
+    {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    
+}
+
+#white_wave
+{
+    width: 100%;
+    max-width: 1745px;
+}
+#landing_page
+{
+    // background-color: #90c441;
+    background-image: url("../img/itea_main_bg.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    .landing_page_content
+    {
+        padding-top: 50px;
+        .landing_page_intro_text 
+        {
+            color: #fff;
+            padding-bottom: 70px;
+            h1 
+            {
+                padding-top: 60px;
+                font-size: 40px;
+                color: #fff;
+                font-family: 'Sarina', cursive;
+            }
+            p
+            {
+                font-size: 18px;
+                color: #f2f2f2;
+            }
+            #order_now
+            {
+                margin-top: 10px;
+                border: none;
+                font-size: 19px;
+                padding: 15px 30px 15px 30px;
+                border-radius: 10px;
+                font-weight: 800;
+                box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
+                position: relative;
+                background-color: #f5ee2a;
+                transition-duration: 0.3s;
+                
+                a {
+                    text-decoration: none;
+                    color: #056527;
+                }
+            }
+            #order_now:hover
+            {
+                transform: translateX(10px);
+            }
+        }
+        .landing_page_itea_img img 
+        {
+            text-align: center;
+            width: 100%;
+            max-width: 430px;
+            -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.3));
+        }
+        @keyframes float {
+            0% {
+                
+                transform: translatey(0px);
+            }
+            50% {
+                
+                transform: translatey(-20px);
+            }
+            100% {
+                
+                transform: translatey(0px);
+            }
+        }
+
+        .landing_page_itea_img {
+
+            transform: translateY(0px);
+            animation: float 5s ease-in-out infinite;
+            img { width: 100%; height: auto; }
+        }
+
+        .scrolldown
+        {
+            text-align: center;
+            .fa-chevron-down 
+            {
+                color: #fff;
+                font-size: 30px;
+                padding-top: 40px;
+            }
+        }
+
+    }
+}
+
+
+#about
+{
+    background-image: url("../img/leaves_bg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .about_content
+    {
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+        h1
+        {
+            font-family: 'Sarina', cursive;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+        h1::before
+        {
+            content: " ";
+            background-color: #cccccc;
+            width: 50px;
+            height: 3px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        h1::after
+        {
+            content: " ";
+            background-color: #cccccc;
+            width: 50px;
+            height: 3px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        p 
+        {
+            font-size: 20px;
+        }
+    }
+    .itea_banner
+    {
+        text-align: center;
+        padding-top: 40px;
+        img 
+        {  
+            width: 100%;
+            max-width: 1000px;
+        }
+    }
+}
+
+
+#best_seller
+{
+    background-color: #90c441;
+    background-image: url("../img/leaves_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .best_seller_content
+    {
+        padding: 70px 0 70px 0;
+        text-align: center;
+        h1
+        {
+            color: #fff;
+            font-family: 'Sarina', cursive;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+        h1::before
+        {
+            content: " ";
+            background-color: #cccccc;
+            width: 10px;
+            height: 3px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        h1::after
+        {
+            content: " ";
+            background-color: #cccccc;
+            width: 10px;
+            height: 3px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        p 
+        {
+            color: #fff;
+            font-size: 20px;
+        }
+        .best_seller_list 
+        {
+            padding-top: 15px;
+            .best_seller_item 
+            {
+                background-color: #fff;
+                box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+                margin: 10px;
+                border-radius: 5px;    
+                width: 300px;
+                padding: 30px 0 0 0;
+                img 
+                {
+                    max-width: 150px;
+                    height: 200px;
+                }
+                .best_seller_item_label
+                {
+                    background-color: #90c441;
+                    margin-top: 40px;
+                    padding: 20px;
+                    border-radius: 0 0 5px 5px;
+                    h2
+                    {
+                    color: #000;
+                    font-size: 20px;
+                    font-family: 'Sarina', cursive;
+                    padding-top: 25px;
+                    }
+                    label 
+                    {
+                        font-weight: 600;
+                        font-size: 17px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+#menu_flavors 
+{
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background-image: url("../img/leaves_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .menu_flavors_content
+    {
+        text-align: center;   
+        h1
+        {
+            font-family: 'Sarina', cursive;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+        h1::before
+        {
+            content: " ";
+            background-color: #cccccc;
+            width: 10px;
+            height: 3px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        h1::after
+        {
+            content: " ";
+            background-color: #cccccc;
+            width: 10px;
+            height: 3px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        p 
+        {
+            font-size: 20px;
+        }
+        .menu_flavors_list
+        {
+            padding: 0 30px 0 30px;
+            .menu_flavors_item 
+            {
+                background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("../img/menu_flavors_item_bg.jpg");
+                box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-top: 25px;
+                border-radius: 5px;
+
+                .menu_flavors_item_img
+                {
+                    padding: 20px;
+                    img {
+                        width: 100%;
+                        max-width: 140px;
+                        height: 160px;
+                        -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.2));
+                    }
+                }
+                .menu_flavors_label
+                {
+                    height: 100%;
+                    padding: 20px 0 40px 0;
+                    background-color: #90c441;
+                    border-radius: 0 0 5px 5px;
+                    h2 
+                    {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .menu_flavor_price
+                    {
+                        font-size: 18px;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}
+#location
+{
+    background-color: #90c441;
+    background-image: url("../img/leaves_bg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    .location_content
+    {
+        padding-top: 80px;
+        text-align: center;
+        color: #fff;
+
+        h1
+        {
+            font-size: 30px;
+            font-family: 'Sarina', cursive;
+            letter-spacing: 1px;
+        }
+        h1::before
+        {
+            content: " ";
+            background-color: #cccccc;
+            width: 10px;
+            height: 3px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        h1::after
+        {
+            content: " ";
+            background-color: #cccccc;
+            width: 10px;
+            height: 3px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        p 
+        {
+            font-size: 20px;
+        }
+        .location_map
+        {
+            line-height: 0;
+            padding-top: 15px;
+            iframe 
+            {
+                width: 100%;
+                max-width: 1000px;
+                height: 400px;
+            }
+        }
+        .fa-search-location
+        {
+            font-size: 100px;
+        }
+    }
+}
+
+#contact_us
+{
+    background-color: #fff;
+    background-image: url("../img/leaves_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    .contact_us_content
+    {
+        padding-top: 100px;
+        text-align: center;
+        h1
+        {
+            font-family: 'Sarina', cursive;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+        h1::before
+        {
+            content: " ";
+            background-color: #cccccc;
+            width: 10px;
+            height: 3px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        h1::after
+        {
+            content: " ";
+            background-color: #cccccc;
+            width: 10px;
+            height: 3px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        p 
+        {
+            font-size: 20px;
+        }
+        .sm_contacts
+        {
+            .sm_contact_item
+            {
+                list-style: none;
+                display: inline-block;
+                padding: 20px;
+                transition-duration: 0.3s;
+
+                i 
+                {
+                    font-size: 25px;
+                    color: #90c441;
+                }
+            }
+            .sm_contact_item:hover
+            {
+                transform: translateY(-5px)
+            }
+        }
+    }
+}
+
+
+footer
+{
+    background-color: #060606;
+    .footer_content 
+    {
+        text-align: center;
+        padding: 20px;
+
+        .footer_logo
+        {
+            img 
+            {
+                width: 100%;
+                max-width: 200px;
+            }  
+        }
+        p
+        {
+            letter-spacing: 1px;
+            font-size: 15px;
+            color: #fff;
+            padding-top: 40px;
+        }
+    }
+}
+
+ 
